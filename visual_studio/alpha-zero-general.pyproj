@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{af52210f-7ad7-4b70-b5d9-5d735c8dfc09}</ProjectGuid>
+    <ProjectHome>..\</ProjectHome>
+    <StartupFile>Arena.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>Global|PythonCore|3.7</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Arena.py" />
+    <Compile Include="Coach.py" />
+    <Compile Include="connect4\Connect4Game.py" />
+    <Compile Include="connect4\Connect4Logic.py" />
+    <Compile Include="connect4\Connect4Players.py" />
+    <Compile Include="connect4\tensorflow\Connect4NNet.py" />
+    <Compile Include="connect4\tensorflow\NNet.py" />
+    <Compile Include="connect4\tensorflow\__init__.py" />
+    <Compile Include="connect4\test_connect4.py" />
+    <Compile Include="connect4\__init__.py" />
+    <Compile Include="docker\jupyter_notebook_config.py" />
+    <Compile Include="Game.py" />
+    <Compile Include="gobang\GobangGame.py" />
+    <Compile Include="gobang\GobangLogic.py" />
+    <Compile Include="gobang\GobangPlayers.py" />
+    <Compile Include="gobang\keras\GobangNNet.py" />
+    <Compile Include="gobang\keras\NNet.py" />
+    <Compile Include="gobang\tensorflow\GobangNNet.py" />
+    <Compile Include="gobang\tensorflow\NNet.py" />
+    <Compile Include="gobang\tensorflow\__init__.py" />
+    <Compile Include="gobang\__init__.py" />
+    <Compile Include="main.py" />
+    <Compile Include="MCTS.py" />
+    <Compile Include="NeuralNet.py" />
+    <Compile Include="othello\chainer\NNet.py" />
+    <Compile Include="othello\chainer\OthelloNNet.py" />
+    <Compile Include="othello\chainer\__init__.py" />
+    <Compile Include="othello\keras\NNet.py" />
+    <Compile Include="othello\keras\OthelloNNet.py" />
+    <Compile Include="othello\keras\__init__.py" />
+    <Compile Include="othello\OthelloGame.py" />
+    <Compile Include="othello\OthelloLogic.py" />
+    <Compile Include="othello\OthelloPlayers.py" />
+    <Compile Include="othello\pytorch\NNet.py" />
+    <Compile Include="othello\pytorch\OthelloNNet.py" />
+    <Compile Include="othello\pytorch\__init__.py" />
+    <Compile Include="othello\tensorflow\NNet.py" />
+    <Compile Include="othello\tensorflow\OthelloNNet.py" />
+    <Compile Include="othello\tensorflow\__init__.py" />
+    <Compile Include="othello\__init__.py" />
+    <Compile Include="pit.py" />
+    <Compile Include="rts\keras\NNet.py" />
+    <Compile Include="rts\keras\RTSNNet.py" />
+    <Compile Include="rts\learn.py" />
+    <Compile Include="rts\pit.py" />
+    <Compile Include="rts\RTSGame.py" />
+    <Compile Include="rts\RTSPlayers.py" />
+    <Compile Include="rts\src\Board.py" />
+    <Compile Include="rts\src\config.py" />
+    <Compile Include="rts\src\config_class.py" />
+    <Compile Include="rts\src\encoders.py" />
+    <Compile Include="rts\visualization\rts_pygame.py" />
+    <Compile Include="rts\visualization\rts_ue4.py" />
+    <Compile Include="tafl\Digits.py" />
+    <Compile Include="tafl\GameVariants.py" />
+    <Compile Include="tafl\keras\NNet.py" />
+    <Compile Include="tafl\keras\TaflNNet.py" />
+    <Compile Include="tafl\keras\__init__.py" />
+    <Compile Include="tafl\mainTafl.py" />
+    <Compile Include="tafl\pitTafl.py" />
+    <Compile Include="tafl\pytorch\NNet.py" />
+    <Compile Include="tafl\pytorch\TaflNNet.py" />
+    <Compile Include="tafl\pytorch\__init__.py" />
+    <Compile Include="tafl\TaflGame.py" />
+    <Compile Include="tafl\TaflLogic.py" />
+    <Compile Include="tafl\TaflPlayers.py" />
+    <Compile Include="tafl\__init__.py" />
+    <Compile Include="test_all_games.py" />
+    <Compile Include="tictactoe\keras\NNet.py" />
+    <Compile Include="tictactoe\keras\TicTacToeNNet.py" />
+    <Compile Include="tictactoe\keras\__init__.py" />
+    <Compile Include="tictactoe\TicTacToeGame.py" />
+    <Compile Include="tictactoe\TicTacToeLogic.py" />
+    <Compile Include="tictactoe\TicTacToePlayers.py" />
+    <Compile Include="tictactoe\__init__.py" />
+    <Compile Include="tictactoe_3d\keras\NNet.py" />
+    <Compile Include="tictactoe_3d\keras\TicTacToeNNet.py" />
+    <Compile Include="tictactoe_3d\keras\__init__.py" />
+    <Compile Include="tictactoe_3d\TicTacToeGame.py" />
+    <Compile Include="tictactoe_3d\TicTacToeLogic.py" />
+    <Compile Include="tictactoe_3d\TicTacToePlayers.py" />
+    <Compile Include="utils.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="docker\requirements.txt" />
+    <Content Include="pretrained_models\6x6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="connect4" />
+    <Folder Include="connect4\tensorflow" />
+    <Folder Include="docker" />
+    <Folder Include="gobang" />
+    <Folder Include="gobang\keras" />
+    <Folder Include="gobang\tensorflow" />
+    <Folder Include="othello" />
+    <Folder Include="othello\chainer" />
+    <Folder Include="othello\keras" />
+    <Folder Include="othello\pytorch" />
+    <Folder Include="othello\tensorflow" />
+    <Folder Include="pretrained_models" />
+    <Folder Include="rts" />
+    <Folder Include="rts\keras" />
+    <Folder Include="rts\src" />
+    <Folder Include="rts\visualization" />
+    <Folder Include="tafl" />
+    <Folder Include="tafl\keras" />
+    <Folder Include="tafl\pytorch" />
+    <Folder Include="tictactoe" />
+    <Folder Include="tictactoe\keras" />
+    <Folder Include="tictactoe_3d" />
+    <Folder Include="tictactoe_3d\keras" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.7" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
